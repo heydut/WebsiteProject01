@@ -72,12 +72,18 @@ header nav ul li {
   display: inline-block;
 }
 
-header nav ul li a {
+header nav ul li a:link,
+header nav ul li a:active {
   color: #3e3e3e;
   font-size: 15px;
   letter-spacing: 0.37px;
   margin-right: 24px;
   text-decoration: none;
+}
+
+header nav ul li a:hover,
+header nav ul li a:visited {
+  color: #3e50e5;
 }
 
 header nav ul li:last-of-type a {
@@ -114,6 +120,7 @@ header nav ul li:last-of-type a {
 .hero-content h1 {
   color: #fff;
   font-size: 50px;
+  font-weight: 400;
   letter-spacing: 1.25px;
   line-height: 56px;
   max-width: 495px;
@@ -130,7 +137,7 @@ header nav ul li:last-of-type a {
   line-height: 28px;
   max-width: 518px;
 
-  margin-bottom: 21px;
+  margin-bottom: 32px;
   margin-top: 0;
 }
 
@@ -153,6 +160,214 @@ header nav ul li:last-of-type a {
 
 .hero-content button:hover {
   background-color: #5365ff;
+}
+
+/* -------------- Products */
+
+.best-sellers {
+  padding-top: 80px;
+}
+
+.best-sellers h2 {
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 0.85px;
+  line-height: 42px;
+  margin: 0 0 14px 0;
+  text-align: center;
+}
+
+.best-sellers hr {
+  border: none;
+  border-top: 5px solid #5365ff;
+  width: 66px;
+}
+
+.product-slider {
+  margin-top: 76px;
+}
+
+.product-slider .container {
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+  padding: 0 8px;
+}
+
+.product-slider .product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 40px;
+  text-align: center;
+  width: 33%;
+
+  position: relative;
+}
+
+.product-slider .product.new::before {
+  content: "New!";
+
+  background-color: #ec1c1c;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.35px;
+  line-height: 21px;
+
+  padding: 5px 15px;
+
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.product-picture img {
+  max-width: 100%;
+}
+
+.product-info {
+  margin-top: 50px;
+}
+
+.product-info .categories {
+  color: #3e50e5;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  line-height: 30px;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.product-info .title {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  margin-bottom: 6px;
+  margin-top: 0;
+}
+
+.product-info .price {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  line-height: 30px;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.product-info .price .original-price {
+  color: #9b9b9b;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: line-through;
+}
+
+.product-info .price .discounted-price {
+  color: #ec1c1c;
+}
+
+.product-info button {
+  background-color: #fff;
+  border-radius: 92px;
+  border: 1px solid #000;
+
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 220px;
+}
+
+span .new {
+  position: absolute;
+}
+
+/* -------------- Newsletter */
+
+.newsletter {
+  background-color: rgba(200, 200, 200, 0.18);
+  margin: 80px auto;
+  max-width: 955px;
+  padding: 72px 0;
+  text-align: center;
+}
+
+.newsletter h3 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  line-height: 42px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter form input {
+  border: 1px solid #3e3e3e;
+  border-radius: 50px 0 0 50px;
+  box-sizing: border-box;
+
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  line-height: 20px;
+  padding-left: 22px;
+
+  height: 50px;
+  width: 325px;
+  max-width: 80%;
+}
+
+.newsletter form input:focus {
+  outline-color: #3e50e5;
+}
+
+.newsletter form button {
+  background-color: #3e50e5;
+  border: 1px solid #3e50e5;
+  border-radius: 0 50px 50px 0;
+  box-sizing: border-box;
+  color: #fff;
+
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  height: 50px;
+  width: 145px;
+  max-width: 20%;
+}
+
+.newsletter form button:hover {
+  background-color: #5365ff;
+  border: 1px solid #5365ff;
 }
 
 /* -------------- Footer */
