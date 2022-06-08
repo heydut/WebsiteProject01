@@ -1,0 +1,158 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;900&display=swap");
+
+body {
+  font-family: "Heebo", sans-serif;
+  margin: 0;
+  padding-top: 80px; /*because of the fixed nav bar*/
+
+  min-height: 3000px;
+}
+
+.container {
+  max-width: 1180px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------- Logo */
+
+.logo {
+  font-size: 27px;
+}
+
+.blue-dot {
+  background-color: #3e50e5;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+
+  height: 10px;
+  width: 10px;
+}
+
+/* -------------- Nav Bar */
+
+header {
+  background-color: #fff;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15);
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  height: 80px;
+  width: 100%;
+
+  z-index: 1;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+header .logo {
+  display: inline-block;
+}
+
+header nav {
+  display: inline-block;
+  float: right;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #3e3e3e;
+  font-size: 15px;
+  letter-spacing: 0.37px;
+  margin-right: 24px;
+  text-decoration: none;
+}
+
+header nav ul li:last-of-type a {
+  margin-right: 0px;
+}
+
+/* -------------- Hero Section */
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  height: auto;
+  width: 100%;
+}
+
+.hero-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  height: 100%;
+  width: 100%;
+}
+
+.hero-content .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100%;
+}
+.hero-content h1 {
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 1.25px;
+  line-height: 56px;
+  max-width: 495px;
+
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.hero-content p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+  max-width: 518px;
+
+  margin-bottom: 21px;
+  margin-top: 0;
+}
+
+.hero-content button {
+  border-radius: 92px;
+  border-style: none;
+  background-color: #3e50e5;
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+
+  height: 50px;
+  max-width: 220px;
+}
+
+.hero-content button:hover {
+  background-color: #5365ff;
+}
+
+/* -------------- Footer */
