@@ -5,8 +5,6 @@ body {
   font-family: "Heebo", sans-serif;
   margin: 0;
   padding-top: 80px; /*because of the fixed nav bar*/
-
-  min-height: 3000px;
 }
 
 .container {
@@ -177,6 +175,10 @@ header nav ul li:last-of-type a {
   text-align: center;
 }
 
+.best-sellers h2:hover {
+  color: #3e50e5;
+}
+
 .best-sellers hr {
   border: none;
   border-top: 5px solid #5365ff;
@@ -282,6 +284,7 @@ header nav ul li:last-of-type a {
   background-color: #fff;
   border-radius: 92px;
   border: 1px solid #000;
+  cursor: pointer;
 
   font-size: 16px;
   font-weight: 700;
@@ -290,6 +293,12 @@ header nav ul li:last-of-type a {
   text-transform: uppercase;
   height: 50px;
   width: 220px;
+}
+
+.product-info button:hover {
+  background-color: #3e50e5;
+  border: 1px solid #3e50e5;
+  color: #fff;
 }
 
 span .new {
@@ -354,6 +363,7 @@ span .new {
   border-radius: 0 50px 50px 0;
   box-sizing: border-box;
   color: #fff;
+  cursor: pointer;
 
   font-size: 14px;
   letter-spacing: 0.35px;
@@ -371,3 +381,65 @@ span .new {
 }
 
 /* -------------- Footer */
+
+footer {
+  /* text-align: center; */
+}
+
+.bottom-nav {
+  background-color: #3e3e3e;
+  padding: 60px 0;
+}
+
+.bottom-nav .container {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 955px;
+}
+
+.bottom-nav ul {
+  list-style: none;
+}
+
+.bottom-nav ul .list-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.bottom-nav ul a {
+  display: block;
+
+  color: #e0e0e0;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  line-height: 22px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.bottom-nav ul a:hover {
+  color: #b4b3b3;
+}
+
+.copyright-text {
+  background-color: #282828;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  line-height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 60px;
+}
