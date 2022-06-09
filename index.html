@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Css Style -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediastyle.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5daa8eb347.js" crossorigin="anonymous"></script>
     <title>Tech Website</title>
 </head>
 
@@ -16,16 +19,24 @@
             <section class="logo"><strong>Your </strong> <span class="blue-dot"></span> Logo </section>
             <nav>
                 <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Promotions</a></li>
-                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#hero">About Us</a></li>
+                    <li><a href="#best-sellers">Best Sellers</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                    <li class="menu-icon"><i class="fa-solid fa-bars"></i></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <img src="images/Hero_image.jpg" alt="hero image, smart watch">
+    <section class="hero" id="hero">
+        <picture>
+            <source media="(max-width: 576px)" srcset="images/Hero_Mobile.jpg">
+            <source media="(max-width: 960px)" srcset="images/Hero_Tablet.jpg">
+            <source media="(max-width: 1440px)" srcset="images/Hero_Desktop.jpg">
+            <img src="images/Hero_Large_Desktop.jpg" alt="hero image, smart watch">
+        </picture>
+
+
         <div class="hero-content">
             <div class="container">
                 <h1>Explore our new smart watch series</h1>
@@ -37,7 +48,7 @@
         </div>
     </section>
 
-    <section class="best-sellers">
+    <section class="best-sellers" id="best-sellers">
         <h2>Best Sellers</h2>
         <hr>
         <div class="product-slider">
@@ -86,7 +97,7 @@
         </div>
     </section>
 
-    <section class="newsletter">
+    <section class="newsletter" id="newsletter">
         <div class="container">
             <h3>Newsletter Signup</h3>
             <p>Subscribe now and don't miss a single deal!</p>
